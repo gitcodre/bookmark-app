@@ -8,7 +8,7 @@ export default function Home() {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${location.origin}/auth/callback`,
+        redirectTo: 'https://bookmark-5axl0e8oa-animeshs-projects-4ee25f57.vercel.app/auth/callback',
       },
     });
   };
